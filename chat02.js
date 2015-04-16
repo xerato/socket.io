@@ -7,7 +7,7 @@ var express = require('express'),
     server = require('http').createServer(app),
     io = require('socket.io').listen(server)
     ;;;
-
+var nicknames=[];
 server.listen(80);
 app.get('/chat02', function (req, res) {
     res.sendfile(__dirname + '/chat02.html');
@@ -41,5 +41,8 @@ io.sockets.on('connection', function (socket) {
 
     });
 
-
+//<embed src="http://player.bgmstore.net/0aAfo" allowscriptaccess="always" allowfullscreen="true" width="422" height="180"></embed><br>
 });
+
+
+
