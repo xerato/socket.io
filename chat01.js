@@ -6,8 +6,12 @@ var express = require('express'),
  ;;;
 
 server.listen(80);
-app.get('/', function (req, res) {
-    res.sendfile(__dirname + '/index.html');
+app.get('/chat01', function (req, res) {
+
+
+
+
+    res.sendfile(__dirname + '/chat01.html');
 });
 
 io.sockets.on('connection', function (socket) {
